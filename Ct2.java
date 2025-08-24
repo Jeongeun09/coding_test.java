@@ -8,8 +8,28 @@ public class Ct2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-      int min;
-        System.out.println("정수 3개를 입력해주세요. : ");
-        int num1, num2, num3 = scanner.nextInt();
+
+        System.out.print("첫 번째 정수를 입력하세요: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("두 번째 정수를 입력하세요: ");
+        int num2 = scanner.nextInt();
+
+        System.out.print("세 번째 정수를 입력하세요: ");
+        int num3 = scanner.nextInt();
+
+        int min = num1;
+
+        if (num2 < min) {
+            min = num2;
+        }
+        if (num3 < min) {
+            min = num3;
+        }
+
+        System.out.println("가장 작은 수는: " + min);
+
+        scanner.close();
     }
+
 }
